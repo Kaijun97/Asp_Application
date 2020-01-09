@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+
+
+    tools:context=".LoginActivity">
+
+
+    <EditText
+
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_username"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_password"
+        android:imeActionId="6"
+        android:imeActionLabel="@string/action_sign_up_short"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+
+    <EditText
+        android:id="@+id/etPasswordConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_passwordConfirm"
+        android:imeActionId="6"
+        android:imeActionLabel="@string/action_sign_up_short"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSignUp"
+            style="?android:textAppearanceSmall"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="@string/action_sign_up"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnBack"
+            style="?android:textAppearanceSmall"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/action_back"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>
